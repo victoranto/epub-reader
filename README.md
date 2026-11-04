@@ -10,7 +10,7 @@ A small Android app that turns an EPUB into an audiobook using the phone's own t
 The voice language comes from the EPUB metadata (`dc:language`). For the best quality, go to Settings → System → Languages → Text-to-speech output, choose "Speech Services by Google" and download the high-quality voice for your language.
 
 ## Building
-- GitHub Actions builds a debug APK on every push (*Actions* tab → latest run → `epub-audiolibro-apk` artifact).
+- GitHub Actions builds a debug APK on every push (*Actions* tab → latest run → `epub-audiobook-apk` artifact). Builds from `main` are also published as the [latest release](../../releases/tag/latest).
 - Or open the folder in Android Studio and press Run.
 
 ## Limitations (v0.1)
