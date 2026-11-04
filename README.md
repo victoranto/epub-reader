@@ -1,18 +1,18 @@
-# EPUB Audiolibro (Android)
+# EPUB Audiobook (Android)
 
-App sencilla para convertir un EPUB en audiolibro usando las voces del propio móvil (gratis y sin internet).
+A small Android app that turns an EPUB into an audiobook using the phone's own text-to-speech voices (free and offline).
 
-## Qué hace
-- **Abrir EPUB**: desde el botón o con "Abrir con…" en el gestor de archivos.
-- **Escuchar**: lee el libro capítulo a capítulo, con pausa, anterior/siguiente y velocidad (0.5x–2x). Toca un capítulo para empezar desde ahí.
-- **Exportar**: genera un `.m4a` por capítulo (`01 - Título.m4a`, …) en una carpeta con el nombre del libro, dentro de la carpeta que elijas. Se puede escuchar luego en cualquier reproductor.
+## Features
+- **Open EPUB**: with the button, or via "Open with…" from a file manager.
+- **Listen**: reads the book chapter by chapter, with pause, previous/next and speed control (0.5x–2x). Tap a chapter to start from there.
+- **Export**: creates one `.m4a` per chapter (`01 - Title.m4a`, …) in a folder named after the book, inside the folder you pick. Play them later in any audio player.
 
-El idioma de la voz se toma del EPUB (`dc:language`). Para mejor calidad, en Ajustes → Sistema → Idioma → Salida de texto a voz, elige "Speech Services by Google" y descarga la voz en español de alta calidad.
+The voice language comes from the EPUB metadata (`dc:language`). For the best quality, go to Settings → System → Languages → Text-to-speech output, choose "Speech Services by Google" and download the high-quality voice for your language.
 
-## Compilar
-- GitHub Actions compila el APK en cada push (pestaña *Actions* → último run → artefacto `epub-audiolibro-apk`).
-- O en Android Studio: abrir la carpeta y darle a Run.
+## Building
+- GitHub Actions builds a debug APK on every push (*Actions* tab → latest run → `epub-audiolibro-apk` artifact).
+- Or open the folder in Android Studio and press Run.
 
-## Limitaciones (v0.1)
-- La exportación se hace con la app abierta (la pantalla se mantiene encendida). Libros largos pueden tardar bastante.
-- Las imágenes y notas al pie se ignoran.
+## Limitations (v0.1)
+- Export runs while the app is open (the screen is kept on). Long books can take a while.
+- Images and footnotes are ignored.
